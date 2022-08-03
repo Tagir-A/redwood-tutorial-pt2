@@ -1,9 +1,8 @@
-import { Link, routes } from '@redwoodjs/router'
 import { useAuth } from '@redwoodjs/auth'
+import { Link, routes } from '@redwoodjs/router'
 
 const BlogLayout = ({ children }) => {
   const { logIn, logOut, isAuthenticated, currentUser } = useAuth()
-
   return (
     <>
       <header className="relative flex justify-between items-center py-4 px-8 bg-blue-700 text-white">
